@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+  function boasVindas() {
+    console.log("Ola estudantes")
+  }
+
+  function solicitarNome() {
+    var nome = prompt("Insira algum nome")
+    console.log("O nome é ", nome)
+  }
+
+  function verificarImparOuPar() {
+    var numero = prompt("Informe um numero")
+    numero = parseInt(numero)
+
+    if (numero % 2 == 0) {
+      alert("Numero é par")
+    } else {
+      alert("Numero é impar")
+    }
+  }
+
+
+  var resultado = 0
+  function somarDoisNumeros(n1, n2) {
+    resultado = n1 + n2
+
+  }
+
+  function mostrarResultado(msg) {
+    console.log(msg)
+  }
+
+
+  somarDoisNumeros(6, 3)
+
+
+
+  function calculadora(n1, n2, operacao) {
+
+    if (operacao == '+') {
+      return n1 + n2
+    }
+
+    if (operacao == '*') {
+      return n1 * n2
+    }
+
+    if (operacao == '-') {
+      return n1 - n2
+    }
+
+    if (operacao == '/') {
+      return n1 / n2
+    }
+
+    return 0
+
+  }
+
+  //console.log(calculadora(1, 2, '+'))
+
+
+  // var somar = (a, b) => { return a + b }
+  // var subtrair = (a, b) => { return a - b }
+
+  // var soma2 = (a, b) => { return a + b }
+  // var subtrair2 = (a, b) => a - b
+
+  // console.log(soma2(20, 10))
+  // console.log(subtrair2(20, 10))
+
+
+
+
+  //Calculo o PrecoProduto + ICMS - Desconto
+
+  // var soma = somar(precoProduto, icms)
+  // var novoPreco = subtrair(soma, desconto)
+
+  // Novo Codigo --------- 
+
+
+  const precoProduto = 500
+  const desconto = 50
+
+  var somar = (a, b) => a + b
+  var subtrair = (a, b) => a - b
+  var calcularICMS = x => x * 0.21
+
+  var icms = calcularICMS(precoProduto)
+  var novoPreco = subtrair(somar(precoProduto, icms), desconto)
+  console.log(novoPreco)
+
+</script>
